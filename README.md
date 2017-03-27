@@ -16,4 +16,4 @@ Using this method we can get system of equations that all must point to the same
 630138897*a_9 + 10439860591*b_9 + 102768467013*c_9 = |S|
 ```
 
-With the constraints: `a_i, b_i, c_i` are all non-negative integers, $b_i > 0$, $a_i*c_i = 0$ and if $a_i = c_i = 0$ then $b_i = 1$.
+With the constraints: `a_i, b_i, c_i` are all non-negative integers, `b_i > 0`, `a_i*c_i = 0` and if `a_i = c_i = 0` then `b_i = 1`.
