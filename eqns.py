@@ -27,9 +27,11 @@ for i in range(0, 3*cap, 3):
     # add requirement that if a_i = 0 and c_i = 0 then b_i = 1
     constraints.append(SMT.Or(SMT.Or(SMT.GT(variables[i], SMT.Int(0)), SMT.GT(variables[i+2], SMT.Int(0))), SMT.Equals(variables[i+1], SMT.Int(1))))
 
-print(constraints)
+
 solver = SMT.Solver(name="z3")
+print("constraints:")
 for c in constraints:
+    print(c)
     solver.add_assertion(c)
 
 # add equations
