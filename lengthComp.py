@@ -50,8 +50,8 @@ for i in range(1, len(x)):
     xTimes[i] = x[i]*yTimes[i-1] + xTimes[i-1]
     yTimes[i] = y[i]*yTimes[i-1] + xTimes[i-1]
     print(str(nums[i][0]) + "*" + str(xTimes[i]) +
-            " " + str(nums[i][1]) + "*" + str(yTimes[i]) +
-            " = " + str(nums[i][0]*xTimes[i] + nums[i][1]*yTimes[i]))
+            "\t+ " + str(nums[i][1]) + "*" + str(yTimes[i]) +
+            "\t= " + str(nums[i][0]*xTimes[i] + nums[i][1]*yTimes[i]))
 # print(str(nums[2][0]) + "*" + str(x[2]+x[1]+1) +
         # " " + str(nums[2][1]) + "*" + str(y[2]+y[1]+1) +
         # " = " + str(nums[2][0]*(x[2]+x[1]+1) + nums[2][1]*(y[2]+y[1]+1)))
