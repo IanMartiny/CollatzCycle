@@ -1,4 +1,12 @@
-from egcd import egcd
+#! /usr/bin/env python
+
+def egcd(a, b):
+    if a == 0:
+        return (b, 0, 1)
+    else:
+        g, x, y = egcd(b % a, a)
+        return (g, y - (b // a) * x, x)
+
 # 10439860591 = 630138897*1 + 9809721694*1
 nums = [(630138897, 9809721694, 10439860591),
         (272500658, 357638239, 9809721694), 
